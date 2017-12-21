@@ -553,7 +553,11 @@ static const NSInteger ContentClipViewTag = 15;
             action.handler(action, YES);
         };
     }
-    [self dismiss:viewController completion:completionHandler];
+    
+    // don't dismiss if action is disabled from handler
+    if (action.isEnabled){
+        [self dismiss:viewController completion:completionHandler];
+    }
 }
 
 @end
