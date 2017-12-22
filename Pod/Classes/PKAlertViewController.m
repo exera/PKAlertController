@@ -11,7 +11,6 @@
 #import <QuartzCore/CAGradientLayer.h>
 #import "PKAlertAction.h"
 #import "PKAlertControllerConfiguration.h"
-#import "PKAlertActionCollectionViewController.h"
 #import "PKAlertLabelContainerView.h"
 #import "PKAlertThemeManager.h"
 #import "PKAlertControllerAnimatedTransitioning.h"
@@ -27,7 +26,6 @@ static const NSInteger ContentClipViewTag = 15;
 @property (nonatomic, getter=isViewInitialized) BOOL viewInitialized;
 @property (nonatomic) CGFloat mainScreenShortSideLength;
 @property (nonatomic) PKAlertControllerConfiguration *configuration;
-@property (nonatomic) PKAlertActionCollectionViewController *actionCollectionViewController;
 @property (nonatomic) NSLayoutConstraint *customViewHeightConstraint;
 @property (nonatomic) PKAlertLabelContainerView *labelContainerView;
 @property (nonatomic) UIStatusBarStyle previousStatusBarStyle;

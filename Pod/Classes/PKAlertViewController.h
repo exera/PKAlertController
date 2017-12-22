@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "PKAlertUtility.h"
+#import "PKAlertActionCollectionViewController.h"
 
 @class PKAlertControllerConfiguration;
 
@@ -17,6 +18,7 @@
 @interface PKAlertViewController : UIViewController
 
 @property (nonatomic, readonly) PKAlertControllerConfiguration *configuration;
+@property (nonatomic) PKAlertActionCollectionViewController *actionCollectionViewController;
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *actionContainerView;
