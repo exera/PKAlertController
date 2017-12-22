@@ -33,10 +33,6 @@ static const NSInteger ContentClipViewTag = 15;
 @property (nonatomic) UIStatusBarStyle previousStatusBarStyle;
 @property (nonatomic) NSArray *changeableLayoutConstraints;
 
-@property (weak, nonatomic) IBOutlet UIView *contentView;
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
-@property (weak, nonatomic) IBOutlet UIView *actionContainerView;
-
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *actionContainerViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *contentViewHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewBottomConstraint;

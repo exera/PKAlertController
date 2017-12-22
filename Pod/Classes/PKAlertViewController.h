@@ -17,6 +17,9 @@
 @interface PKAlertViewController : UIViewController
 
 @property (nonatomic, readonly) PKAlertControllerConfiguration *configuration;
+@property (weak, nonatomic) IBOutlet UIView *contentView;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIView *actionContainerView;
 
 + (void)registerStoryboard:(UIStoryboard *)storyboard;
 + (instancetype)instantiateOwnerViewController;
